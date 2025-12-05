@@ -1,6 +1,6 @@
 This is the original plan for features I wanted to implement in the CLI version of checkers included.
 The primary goal was to use as many elements as possible from my recent learnings to make a program to play checkers.
-To the ends of the goal the program ends up being very verbose and lengthy for the purpose of using multiple structures, objects, classes, etc.
+To the ends of the goal the program is very verbose and lengthy for the purpose of using multiple structures, objects, classes, etc.
 
   // while no one has exited run app - Implemented
     // class for checker pieces - Implemented
@@ -38,4 +38,5 @@ To the ends of the goal the program ends up being very verbose and lengthy for t
     // win condition is when the other player has no more pieces, or draw when each has one piece - Implemented
       // win celebration/replay - Implemented
     // turns to be handled in alternating fashion - Implemented
+
     // Computer player - Implemented
