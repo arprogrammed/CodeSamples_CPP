@@ -1,0 +1,41 @@
+This is the original plan for features I wanted to implement in the CLI version of checkers included.
+The primary goal was to use as many elements as possible from my recent learnings to make a program to play checkers.
+To the ends of the goal the program ends up being very verbose and lengthy for the purpose of using multiple structures, objects, classes, etc.
+
+  // while no one has exited run app - Implemented
+    // class for checker pieces - Implemented
+      // position, id, piece type(king,men/queen,women/royalty,peasant), piece rank(royalty/peasant) - Implemented
+        // move_determiner function part of move in checker piece class - Implemented
+          // men, women, peasant - Implemented
+            // can only move forward (always 2 or less) - Implemented
+            // if a jump is available it must be done - Implemented
+            // jump equals capture and opponent piece removed - Implemented
+            // piece reaches other side of board get's kinged - Implemented
+          // king, queen, royalty - Implemented
+            // same as base pieces but can not be re-promoted AND can move forward and backward - Implemented
+        // position - grid location of the piece currently - Implemented
+        // id - unique int of piece - Implemented
+        // piece type - based on player gender - Implemented
+        // piece rank - default to men/women/peasant and rank up on grid position and color - Implemented
+    // class for player - Implemented
+      // name, gender, color(red/black), wins, losses - Implemented
+        // name - user generated string - Implemented
+        // gender - male, female, other string - Implemented
+        // color - red or black bool - Implemented
+        // wins - number of wins based on player name int - Implemented
+        // losses - number of losses based on player name int - Implemented
+    // menu - Implemented
+      // save, load, leaderboard, start new game, exit - Implemented
+        // save will store the player inherited pieces in a txt - Implemented
+        // load will read from save to load objects - Implemented
+        // leaderboard - Implemented
+	// BONUS - Loss Leaderboard - Implemented
+        // start a new game start new sequence - Implemented
+        // exit will ask for save - Implemented
+    // board 8x8 - Implemented
+      // two rows, top and bottom, always kings row - Implemented in function that checks rank and sets king rank
+      // pieces only use one color - Implemented
+    // win condition is when the other player has no more pieces, or draw when each has one piece - Implemented
+      // win celebration/replay - Implemented
+    // turns to be handled in alternating fashion - Implemented
+    // Computer player - Implemented
