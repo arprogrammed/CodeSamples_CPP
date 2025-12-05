@@ -39,3 +39,4 @@ bool Checkers::comparePostion(std::pair<int,int> new_position) {
     return false;
   }
 }
+
