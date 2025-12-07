@@ -673,10 +673,15 @@ bool loadGame(Board &board) {
 
 bool startNewGame(Board &board) {
   // User prompts and input validation
-  std::cout << "Player 1 enter your name: ";
   std::string name1;
+  std::cout << "Player 1 enter your name: ";
   std::getline(std::cin, name1);
   name1 = clean_string(name1);
+  while(name1.empty()) {
+    std::cout << "Player 1 enter your name: ";
+    std::getline(std::cin, name1);
+    name1 = clean_string(name1);  
+  }
   std::transform(name1.begin(), name1.begin()+1, name1.begin(), [](char c){return std::toupper(c);});
   std::cout << "Player 1 enter your gender (Male, Female, or Other): ";
   std::string gender1;
@@ -726,6 +731,11 @@ bool startNewGame(Board &board) {
     std::cout << "Player 2 enter your name: ";
     std::getline(std::cin, name2);
     name2 = clean_string(name2);
+    while(name2.empty()) {
+        std::cout << "Player 2 enter your name: ";
+        std::getline(std::cin, name2);
+        name2 = clean_string(name2);  
+    }
     std::transform(name2.begin(), name2.begin()+1, name2.begin(), [](char c){return std::toupper(c);});
     std::cout << "Player 2 enter your gender (Male, Female, or Other): ";
     std::getline(std::cin, gender2);
